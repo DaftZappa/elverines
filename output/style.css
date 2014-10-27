@@ -1,0 +1,137 @@
+body, div, h1, h2, h3, span, p {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	color: #000000; 
+}
+/* fullscreen */
+html {
+	height:100%;
+}
+body {
+	height:100%;
+	margin: 0px;
+	overflow:hidden; /* disable scrollbars */
+}
+body {
+	font-size: 10pt;
+	background : #ffffff; 
+}
+table,tr,td {
+	font-size: 10pt;
+	border-color : #777777;
+	background : #dddddd; 
+	color: #000000; 
+	border-style : solid;
+	border-width : 2px;
+	padding: 5px;
+	border-collapse:collapse;
+}
+h1 {
+	font-size: 18pt;
+}
+h2 {
+	font-size: 14pt;
+}
+.warning { 
+	font-weight: bold;
+} 
+/* fix for scroll bars on webkit & Mac OS X Lion */ 
+::-webkit-scrollbar {
+	background-color: rgba(0,0,0,0.5);
+	width: 0.75em;
+}
+::-webkit-scrollbar-thumb {
+	background-color:  rgba(255,255,255,0.5);
+}	
+.container-box {
+	display: none;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1001;
+}
+.black-box {
+	background: black;
+	width: 50%;
+	min-height: 400px;
+	max-height: 400px;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	z-index: 1001;
+}
+.close-button {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+.close-button span {
+	color: white;
+	font-family: Myriad Pro, sans-serif;
+	font-weight: bold;
+}
+
+
+/*MENU*/
+
+
+.menu {
+	background: white;
+	height: 60px;
+	width: 100%;
+	padding: 30px;
+	padding-top: 90px;
+	-webkit-box-shadow: 4px 0 15px 1px rgba(000,000,000,0.3);
+	box-shadow: 4px 0 15px 1px rgba(000,000,000,0.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1005;
+	width: 267px;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: none;
+	margin: 0;
+	background-color: none;
+
+}
+}
+
+.menu li {
+	margin-bottom: 20px;
+	line-height: 16px;
+	position: relative;
+}
+
+.menu a {
+	color: #2f3786;
+	font-weight: normal;
+	font-size: 17px;
+	position: relative;
+}
+
+.menu-icon {
+	background: url('http://www.enof-server.nl/8225/wp-content/themes/cepm/img/menu-icon.svg') no-repeat;
+	width: 50px;
+	height: 50px;
+	display: block;
+	float: right;
+	margin-top: 13px;
+	margin-right: 14px;
+}
+
+.menu .close-menu {
+	background: url('http://www.enof-server.nl/8225/wp-content/themes/cepm/img/close-menu.svg') no-repeat;
+	width: 45px;
+	height: 45px;
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	margin-top: 0;
+}
